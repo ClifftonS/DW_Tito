@@ -288,27 +288,17 @@ table, th, td {
         <tr>
             <th>ID Cabang</th>
             <th>Nama Cabang</th>
-            <th>ID Order</th>
             <th>ID Customer</th>
             <th>Nama Customer</th>
-            <th>ID Product</th>
-            <th>Nama Product</th>
-            <th>Price</th>
-            <th>Quantity Product</th>
-            <th>Jumlah Customer</th>
+            <th>Jumlah Kunjungan</th>
         </tr>
         @foreach ($cabangcus as $item4)
         <tr>
             <td>{{$item4->id_cabang}}</td>
             <td>{{$item4->nama_cabang}}</td>
-            <td>{{$item4->order_id}}</td>
             <td>{{$item4->customer_id}}</td>
             <td>{{$item4->customer_name}}</td>
-            <td>{{$item4->product_id}}</td>
-            <td>{{$item4->product_name}}</td>
-            <td>{{$item4->price}}</td>
-            <td>{{$item4->quantity_product}}</td>
-            <td>{{$item4->Jumlah_Customer}}</td>
+            <td>{{$item4->Jumlah_Kunjungan}}</td>
         </tr>
         @endforeach
     </table>
@@ -320,26 +310,18 @@ table, th, td {
         <tr>
             <th>ID Cabang</th>
             <th>Nama Cabang</th>
-            <th>ID Order</th>
-            <th>ID Customer</th>
-            <th>Nama Customer</th>
-            <th>ID Product</th>
-            <th>Nama Product</th>
-            <th>Price</th>
-            <th>Quantity Product</th>
+            <th>ID Produk</th>
+            <th>Nama Produk</th>
+            <th>Harga</th>
             <th>Jumlah Terjual</th>
         </tr>
         @foreach ($cabangpro as $item5)
         <tr>
             <td>{{$item5->id_cabang}}</td>
             <td>{{$item5->nama_cabang}}</td>
-            <td>{{$item5->order_id}}</td>
-            <td>{{$item5->customer_id}}</td>
-            <td>{{$item5->customer_name}}</td>
             <td>{{$item5->product_id}}</td>
             <td>{{$item5->product_name}}</td>
             <td>{{$item5->price}}</td>
-            <td>{{$item5->quantity_product}}</td>
             <td>{{$item5->Jumlah_Terjual}}</td>
         </tr>
         @endforeach
@@ -350,28 +332,16 @@ table, th, td {
 <div id="cuspro" class="tab 6" style="display:none">
     <table class= "table customer product">
         <tr>
-            <th>ID Cabang</th>
-            <th>Nama Cabang</th>
-            <th>ID Order</th>
-            <th>ID Customer</th>
-            <th>Nama Customer</th>
-            <th>ID Product</th>
-            <th>Nama Product</th>
-            <th>Price</th>
-            <th>Quantity Product</th>
+            <th>ID Produk</th>
+            <th>Nama Produk</th>
+            <th>Harga</th>
             <th>Jumlah Customer Yang Pernah Beli</th>
         </tr>
         @foreach ($customerpro as $item6)
         <tr>
-            <td>{{$item6->id_cabang}}</td>
-            <td>{{$item6->nama_cabang}}</td>
-            <td>{{$item6->order_id}}</td>
-            <td>{{$item6->customer_id}}</td>
-            <td>{{$item6->customer_name}}</td>
             <td>{{$item6->product_id}}</td>
             <td>{{$item6->product_name}}</td>
             <td>{{$item6->price}}</td>
-            <td>{{$item6->quantity_product}}</td>
             <td>{{$item6->Jumlah_Customer}}</td>
         </tr>
         @endforeach
